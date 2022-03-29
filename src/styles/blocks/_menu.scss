@@ -1,0 +1,19 @@
+.header {
+  a {
+    color: $color-white;
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    color: $color-white;
+  }
+}

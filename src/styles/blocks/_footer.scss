@@ -1,0 +1,45 @@
+footer {
+  background-color: $color-dark;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  .footer-num {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .soc-items {
+    width: 26px;
+    height: 26px;
+    fill: none;
+  }
+
+  .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .fot-logo {
+    width: 16.66%;
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .footer-num {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-right: 60px;
+  }
+
+  .socials {
+      margin-left: -7px;
+      margin-right: -7px;
+  }
+
+  .soc-items {
+      padding: 7px;
+  }
+}

@@ -1,0 +1,48 @@
+.lead {
+  text-align: center;
+  color: $color-dark;
+
+  h2 {
+    font-size: 64px;
+    line-height: 87px;
+    margin-top: 130px;
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 18px;
+    margin-bottom: 45px;
+  }
+
+  .forms {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    .form {
+        padding: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+
+  input {
+    
+    height: 100%;
+    min-width: 412px;
+  }
+
+  .btn-form {
+    min-width: 412px;
+    font-size: 28px;
+    line-height: 34px;
+    padding: 30px 140px;
+  }
+}
