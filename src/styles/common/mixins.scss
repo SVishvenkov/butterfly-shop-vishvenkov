@@ -1,0 +1,24 @@
+@mixin logo {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 57px;
+}
+
+
+@mixin inner {
+  width: 1276px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+@mixin btn {
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: 42px;
+  line-height: 57px;
+  min-width: 497px;
+}

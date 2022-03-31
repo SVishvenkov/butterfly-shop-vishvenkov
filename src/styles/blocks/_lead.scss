@@ -2,7 +2,12 @@
   text-align: center;
   color: $color-dark;
 
+  .lead-inner {
+    @include inner;
+  }
+
   h2 {
+    font-weight: 400;
     font-size: 64px;
     line-height: 87px;
     margin-top: 130px;
@@ -40,6 +45,7 @@
   }
 
   .btn-form {
+    @include btn;
     min-width: 412px;
     font-size: 28px;
     line-height: 34px;

@@ -3,11 +3,27 @@
   padding: 40px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.header-inner {
+  @include inner;
+}
+
 .header-wrap {
   display: flex;
   align-items: center;
 }
 
 .main-logo {
+  @include logo;
   margin-right: auto;
 }

@@ -4,6 +4,10 @@
   }
 }
 
+.header-inner {
+  @include inner;
+}
+
 .menu {
   ul {
     display: flex;
