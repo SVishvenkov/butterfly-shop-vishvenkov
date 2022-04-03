@@ -1,10 +1,10 @@
 @mixin logo {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 57px;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
 }
-
 
 @mixin inner {
   width: 1276px;
