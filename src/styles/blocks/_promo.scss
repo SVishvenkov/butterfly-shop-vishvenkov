@@ -1,6 +1,7 @@
 .promo {
   text-align: center;
   background-image: url(/images/promo.png);
+  margin-top: 89px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20,6 +21,6 @@
   .promo-btn {
     @include btn;
     padding: 30px 36px;
-    margin: 50px 0 245px;
+    margin: 50px 0 215px;
   }
 }

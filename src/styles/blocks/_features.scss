@@ -9,7 +9,7 @@
     color: $color-dark;
     font-size: 64px;
     line-height: 87px;
-    margin: 130px 0 50px;
+    margin: 130px 0 90px;
     font-weight: 400;
   }
 
@@ -55,7 +55,8 @@
   .btn-features {
 
     @include btn;
+    margin: 0;
     padding: 30px 36px;
-    margin: 60px 0 130px;
+    margin: 110px 0 130px;
   }
 }
