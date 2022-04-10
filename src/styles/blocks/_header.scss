@@ -6,6 +6,15 @@
   left: 0;
   top: 0;
   z-index: 1000;
+
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 16px 0;
+  }
 }
 
 a {
@@ -17,6 +26,26 @@ a {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: $color-dark;
+    color: $color-white;
+  }
+
+  ul {
+    list-style: none;
+
+    @media (max-width: $mobile-max) {
+      justify-content: center;
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 .header-inner {
@@ -26,9 +55,22 @@ a {
 .header-wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-logo {
   @include logo;
-  margin-right: auto;
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }

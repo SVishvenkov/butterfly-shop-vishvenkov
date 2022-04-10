@@ -1,26 +1,55 @@
 .promo {
   text-align: center;
+  width: 100%;
   background-image: url(/images/promo.png);
   margin-top: 89px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 215px;
 
-  .promo-inner {
-    @include inner;
+  @media (max-width: $tablet-max) {
+    width: 100%;
+    min-width: 1286px;
+    padding-bottom: 190px;
   }
 
-  h1 {
-    color: $color-white;
-    font-weight: 600;
-    line-height: 98px;
-    font-size: 72px;
-    padding: 200px 0 50px;
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    margin-top: 69px;
+    padding-bottom: 100px;
+  }
+}
+.promo-inner {
+  @include inner;
+}
+
+h1 {
+  color: $color-white;
+  font-weight: 600;
+  line-height: 98px;
+  font-size: 72px;
+  padding: 200px 0 100px;
+
+  @media (max-width: $tablet-max) {
+    padding-top: 180px;
+    font-size: 54px;
+    line-height: 74px;
   }
 
-  .promo-btn {
-    @include btn;
-    padding: 30px 36px;
-    margin: 50px 0 215px;
+  @media (max-width: $mobile-max) {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.promo-btn {
+  @include btn;
+  padding: 30px 36px;
+
+  @media (max-width: $mobile-max) {
+    padding: 20px 14px;
   }
 }

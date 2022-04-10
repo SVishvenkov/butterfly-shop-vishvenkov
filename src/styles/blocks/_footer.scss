@@ -1,5 +1,8 @@
 footer {
   background-color: $color-dark;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-width: 1286px;
 
   .footer-inner {
     @include inner;
@@ -9,60 +12,76 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
-  .fot-logo {
+  .foot-logo {
     @include logo;
-    margin: 30px 0;
     color: $color-white;
-    width: 66.68%;
+
+    @media (max-width: $mobile-max) {
+      font-size: 36px;
+      line-height: 49px;
+
+    }
   }
+
 
   .foot-soc {
-    width: 33.32%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
   }
+
+.footer-phone {
+  @media (max-width: $mobile-max) {
+padding-top: 30px;
+
+  }
+}
 
   a {
     color: $color-white;
     text-decoration: none;
+
+
   }
 
   .footer-num {
     font-size: 28px;
     line-height: 38px;
-    margin-left: 20px;
-    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+
+
+    @media (max-width: $mobile-max) {
+      font-size: 36px;
+      line-height: 49px;
+
+    }
   }
 
+  .social-items {
+    margin-left: 15px;
+    width: 26px;
+    height: 26px;
 
-    .social-items {
-      width: 26px;
-      height: 26px;
-    }
-
+    @media (max-width: $mobile-max) {
+      padding-top: 15px;
+      
+        }
+  }
 }
-//   .foot-info {
-//     // width: 91.67%;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-
-// }
-
-//   .footer-num {
-//     margin-top: 40px;
-//     margin-bottom: 40px;
-//     margin-right: 60px;
-//   }
-
-//   .socials {
-//     padding: 7px;
-//     width: 41.65%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// }

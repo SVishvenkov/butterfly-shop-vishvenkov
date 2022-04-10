@@ -9,12 +9,25 @@
 }
 
 .menu {
+  @media (max-width: $mobile-max) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
   ul {
     display: flex;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+    }
   }
 
   li {
     margin: 0 15px;
+
+    @media (max-width: $mobile-max) {
+
+      padding-bottom: 10px;
+    }
   }
 
   a {

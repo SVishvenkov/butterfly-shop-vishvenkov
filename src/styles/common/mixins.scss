@@ -4,12 +4,21 @@
   font-weight: 600;
   font-size: 42px;
   line-height: 57px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 
 @mixin inner {
   width: 1276px;
   margin: 0 auto;
-
 }
 
 @mixin btn {
@@ -21,4 +30,10 @@
   font-size: 42px;
   line-height: 57px;
   min-width: 497px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+    min-width: 278px;
+  }
 }
