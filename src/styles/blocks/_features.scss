@@ -58,6 +58,7 @@
 
     @media (max-width: $tablet-max) {
       width: 50%;
+      align-content: stretch;
     }
 
     @media (max-width: $mobile-max) {
@@ -78,8 +79,8 @@
   span {
     position: absolute;
     width: 100%;
-    top: 79.13%;
-    bottom: 0.15%;
+    // top: 79.13%;
+    bottom: 0;
     left: 0px;
     color: $color-white;
     padding: 15px;
@@ -88,9 +89,11 @@
     font-size: 24px;
     line-height: 33px;
 
+    @media (max-width: $tablet-max) {
+
+    }
+
     @media (max-width: $mobile-max) {
-      padding-left: 0;
-      padding-right: 0;
 
     }
   }
