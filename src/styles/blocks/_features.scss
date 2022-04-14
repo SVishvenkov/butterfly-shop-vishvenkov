@@ -12,113 +12,110 @@
     padding-top: 90px;
     padding-bottom: 90px;
   }
+}
+.features-inner {
+  @include inner;
+}
 
-  .features-inner {
-    @include inner;
+.features-title {
+  color: $color-dark;
+  font-size: 64px;
+  line-height: 87px;
+  margin-bottom: 90px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 82px;
+    margin-bottom: 80px;
   }
 
-  h2 {
-    color: $color-dark;
-    font-size: 64px;
-    line-height: 87px;
-    margin-bottom: 90px;
-    font-weight: 400;
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 60px;
+  }
+}
 
-    @media (max-width: $tablet-max) {
-      font-size: 60px;
-      line-height: 82px;
-      margin-bottom: 80px;
-    }
+.features-butterfly {
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 
-    @media (max-width: $mobile-max) {
-      font-size: 36px;
-      line-height: 49px;
-      margin-bottom: 60px;
-    }
+  @media (max-width: $tablet-max) {
+    margin: 0 auto;
   }
 
-  .features-butterfly {
-    margin-bottom: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+  @media (max-width: $mobile-max) {
+  }
+}
 
-    @media (max-width: $tablet-max) {
-      margin: 0 auto;
-    }
+.features-card {
+  width: 25%;
+  padding: 10px;
 
-    @media (max-width: $mobile-max) {
-    }
+  @media (max-width: $tablet-max) {
+    width: 50%;
+    align-content: stretch;
   }
 
-  .features-card {
-    width: 25%;
-    padding: 10px;
-
-    @media (max-width: $tablet-max) {
-      width: 50%;
-      align-content: stretch;
-    }
-
-    @media (max-width: $mobile-max) {
-      width: 100%;
-    }
-  }
-
-  .card {
-    position: relative;
-    display: block;
-    @media (max-width: $tablet-max) {
-    }
-
-    @media (max-width: $mobile-max) {
-    }
-  }
-
-  span {
-    position: absolute;
+  @media (max-width: $mobile-max) {
     width: 100%;
-    // top: 79.13%;
-    bottom: 0;
-    left: 0px;
-    color: $color-white;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.4);
-    font-weight: 400;
+  }
+}
+
+.card {
+  position: relative;
+  display: block;
+  @media (max-width: $tablet-max) {
+  }
+
+  @media (max-width: $mobile-max) {
+  }
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  // top: 79.13%;
+  bottom: 0;
+  left: 0px;
+  color: $color-white;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (max-width: $tablet-max) {
+  }
+
+  @media (max-width: $mobile-max) {
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn-features {
+  @include btn;
+  margin: 0;
+  padding: 30px 36px;
+  margin-top: 150px;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 60px;
+    max-width: 278px;
     font-size: 24px;
     line-height: 33px;
-
-    @media (max-width: $tablet-max) {
-
-    }
-
-    @media (max-width: $mobile-max) {
-
-    }
-  }
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  .btn-features {
-    @include btn;
-    margin: 0;
-    padding: 30px 36px;
-    margin-top: 150px;
-
-    @media (max-width: $tablet-max) {
-      margin-top: 80px;
-    }
-
-    @media (max-width: $mobile-max) {
-      margin-top: 60px;
-      max-width: 278px;
-      font-size: 24px;
-      line-height: 33px;
-      padding: 20px 14px;
-    }
+    padding: 20px 14px;
   }
 }

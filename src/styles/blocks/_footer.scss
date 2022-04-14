@@ -2,7 +2,10 @@ footer {
   background-color: $color-dark;
   padding-top: 30px;
   padding-bottom: 30px;
-  min-width: 1286px;
+
+  @media (max-width: $tablet-max) {
+    padding: 10px;
+  }
 
   .footer-inner {
     @include inner;
@@ -33,14 +36,13 @@ footer {
 
   .foot-soc {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
     @media (max-width: $mobile-max) {
-      display: block;
       width: 100%;
       justify-content: center;
-      text-align: center;
     }
   }
 
@@ -71,9 +73,5 @@ footer {
     margin-left: 15px;
     width: 26px;
     height: 26px;
-
-    @media (max-width: $mobile-max) {
-      padding-top: 15px;
-    }
   }
 }
