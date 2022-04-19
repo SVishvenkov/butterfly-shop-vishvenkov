@@ -11,67 +11,66 @@ footer {
     @include inner;
   }
 
-  .footer-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: $mobile-max) {
-      display: block;
-      width: 100%;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-
-  .foot-logo {
-    @include logo;
-    color: $color-white;
-
-    @media (max-width: $mobile-max) {
-      font-size: 36px;
-      line-height: 49px;
-    }
-  }
-
-  .foot-soc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (max-width: $mobile-max) {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-
-  .footer-phone {
-    @media (max-width: $mobile-max) {
-      padding-top: 30px;
-    }
-  }
-
   a {
     color: $color-white;
     text-decoration: none;
   }
+}
 
-  .footer-num {
-    font-size: 28px;
-    line-height: 38px;
-    padding-left: 20px;
-    padding-right: 15px;
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    @media (max-width: $mobile-max) {
-      font-size: 36px;
-      line-height: 49px;
-    }
+  @media (max-width: $mobile-max) {
+    display: block;
+    justify-content: center;
+    text-align: center;
   }
+}
 
-  .social-items {
-    margin-left: 15px;
-    width: 26px;
-    height: 26px;
+.foot-logo {
+  @include logo;
+  color: $color-white;
+
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
   }
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobile-max) {
+    justify-content: center;
+  }
+}
+
+.footer-phone {
+  @media (max-width: $mobile-max) {
+    padding-top: 30px;
+  }
+}
+
+.footer-num {
+  font-size: 28px;
+  line-height: 38px;
+  padding-left: 20px;
+  padding-right: 15px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+
+.social-items {
+  margin-left: 15px;
+  width: 26px;
+  height: 26px;
 }

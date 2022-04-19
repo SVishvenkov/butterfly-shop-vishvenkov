@@ -4,7 +4,6 @@
   padding-top: 130px;
   padding-bottom: 130px;
 
-
   @media (max-width: $tablet-max) {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -20,23 +19,7 @@
   }
 
   h2 {
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 87px;
-    padding-bottom: 18px;
-    text-align: center;
-
-    @media (max-width: $tablet-max) {
-      font-size: 60px;
-      line-height: 82px;
-      padding-bottom: 40px;
-    }
-
-    @media (max-width: $mobile-max) {
-      font-size: 36px;
-      line-height: 49px;
-      padding-bottom: 20px;
-    }
+    @include h2;
   }
 
   p {
