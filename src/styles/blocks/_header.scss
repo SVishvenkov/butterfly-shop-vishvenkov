@@ -27,6 +27,10 @@ a {
   line-height: 24px;
   text-transform: uppercase;
 
+  @media (min-width: $desktop) {
+    display: block !important;
+  }
+
   @media (max-width: $mobile-max) {
     position: absolute;
     top: 100%;
