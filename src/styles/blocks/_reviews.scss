@@ -1,0 +1,21 @@
+.slider {
+    padding: 100px 0;
+    background-color: $color-white;
+  }
+  
+  .slider-inner {
+    @include inner;
+  }
+  
+  .slider-title {
+    @include h2;
+  }
+  
+  .slider-wrap {
+    margin-top: 50px;
+  }
+  
+  .carousel-image {
+      width: 304px;
+      height: 304px;  
+  }

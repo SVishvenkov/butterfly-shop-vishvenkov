@@ -45,12 +45,10 @@ $(document).ready(function () {
   });
   //faq
 
-
-
   $(".j-faq-burger1").on("click", function () {
     $(".j-desc1").slideToggle();
   });
-  
+
   $(".j-faq-burger2").on("click", function () {
     $(".j-desc2").slideToggle();
   });
@@ -58,4 +56,37 @@ $(document).ready(function () {
   $(".j-faq-burger3").on("click", function () {
     $(".j-desc3").slideToggle();
   });
+
+  //карусель
+
+  $(".j-carousel").slick({
+    // dots: true
+  });
+
+  //Все бабочки
+
+  $(".j-btn-review").on("click", function () {
+    $.ajax({
+      type: "POST",
+      url: "jsons/reviews.json",
+      data: "count=2",
+      success: function (response) {
+        console.log(response);
+      },
+      error: function () {},
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+  
 });

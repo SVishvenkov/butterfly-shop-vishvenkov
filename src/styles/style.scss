@@ -4,6 +4,9 @@
 @import "common/mixins";
 @import "common/_common";
 
+//plugins
+@import "plugins/slick";
+
 // blocks
 @import "blocks/_header";
 @import "blocks/_menu";
@@ -14,3 +17,5 @@
 @import "blocks/catalog";
 @import "blocks/_contacts";
 @import "blocks/_faq";
+@import "blocks/_reviews.scss";
+@import "blocks/_carousel.scss";

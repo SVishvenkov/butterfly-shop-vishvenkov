@@ -1,0 +1,25 @@
+{
+    "catalog": [
+      {
+        "imgUrl": "images/butterfly-1",
+        "name": "Взрослая типа",
+        "text": "бабочка токая"
+      },
+      {
+        "imgUrl": "images/butterfly-2",
+        "name": "Типа детская",
+        "text": "бабочка ростокая"
+      },
+      {
+        "imgUrl": "images/butterfly-3",
+        "name": "Типа питушиная",
+        "text": "бабочка сикая"
+      },
+      {
+        "imgUrl": "images/butterfly-4",
+        "name": "для животных",
+        "text": "бабочка вона какая"
+      }
+    ]
+  }
+  

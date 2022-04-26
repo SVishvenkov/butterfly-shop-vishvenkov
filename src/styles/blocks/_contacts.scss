@@ -39,7 +39,8 @@
   display: none;
 
   &.active {
-    display: block;
+    display: flex;
+    text-align: center;
   }
 }
 
