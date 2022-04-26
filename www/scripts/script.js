@@ -59,16 +59,15 @@ $(document).ready(function () {
 
   //карусель
 
-  $(".j-carousel").slick({
-    // dots: true
-  });
+  // $(".j-carousel").slick({
+  //   dots: true
+  // });
 
   //Все бабочки
 
   $(".j-btn-review").on("click", function () {
     $.ajax({
       type: "POST",
-      url: "jsons/reviews.json",
       data: "count=2",
       success: function (response) {
         console.log(response);
