@@ -1,0 +1,66 @@
+.promo-btn {
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: 42px;
+  line-height: 57px;
+  min-width: 497px;
+  padding: 30px 36px;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+    min-width: 278px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 20px 14px;
+  }
+}
+
+.btn-features {
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: $color-accent;
+  color: $color-white;
+  font-size: 42px;
+  line-height: 57px;
+  min-width: 497px;
+  border: none;
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 33px;
+    min-width: 278px;
+  }
+  margin: 0;
+  padding: 30px 36px;
+  margin-top: 150px;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 60px;
+    max-width: 278px;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 20px 14px;
+  }
+}
+
+.btn-lead {
+  height: 104px;
+  width: 100%;
+  color: $color-white;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 34px;
+  background-color: $color-accent;
+  border: none;
+}

@@ -1,89 +1,96 @@
+
+
 .carousel-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.caorusel-info {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.carousel-info-text {
+  padding-left: 22px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.caorusel-caption {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.caorusel-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.carousel {
+  padding: 0 50px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style: none;
+    margin: 0 5px;
   }
-  
-  .caorusel-color-block {
-    flex-shrink: 0;
-    width: 300px;
-    height: 150px;
-    margin-right: 20px;
-    border-radius: 5px;
-  
-  
-    &.red {
-      background-color: red;
-    }
-  
-    &.green {
-      background-color: green;
-    }
-  
-    &.blue {
-      background-color: blue;
-    }
-  }
-  
-  .caorusel-info {
-    flex-grow: 1;
-  }
-  
-  .caorusel-caption {
-    display: block;
-    margin-bottom: 20px;
-    // font-family: $font-ral;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 42px;
-  }
-  
-  .caorusel-text {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
-  }
-  
-  .carousel {
-    padding: 0 50px;
-  
-    .slick-arrow {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      width: 40px;
-      height: 40px;
-    }
-  
-    .slick-prev {
-      left: 0;
-    }
-  
-    .slick-next {
-      right: 0;
-    }
-  
-    .slick-dots {
-      display: flex;
-      justify-content: center;
-  
-      li {
-        list-style: none;
-        margin: 0 5px;
-      }
-  
-      .slick-active {
-        button {
-          background-color: $color-dark;
-        }
-      }
-  
-      button {
-        width: 10px;
-        height: 10px;
-        border: 2px solid $color-dark;
-        font-size: 0;
-        border-radius: 50%;
-      }
+
+  .slick-active {
+    button {
+      background-color: $color-dark;
     }
   }
+
+  button {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    border-radius: 50%;
+  }
+}
+
+.slick-next {
+  border: none;
+  color: rgba($color-white, 0.1);
+  background-image: url(/images/New\ folder/reviews-right.png);
+  background-color: $color-white;
+}
+
+.slick-prev {
+  border: none;
+  color: rgba($color-white, 0.1);
+  background-image: url(/images/New\ folder/reviews-left.png);
+  background-color: $color-white;
+}
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+}

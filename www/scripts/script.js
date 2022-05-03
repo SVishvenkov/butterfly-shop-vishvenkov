@@ -43,49 +43,76 @@ $(document).ready(function () {
       }
     });
   });
+
+
   //faq
 
-  $(".j-faq-burger1").on("click", function () {
-    $(".j-desc1").slideToggle();
-  });
+  let prevFaqBtn;
 
-  $(".j-faq-burger2").on("click", function () {
-    $(".j-desc2").slideToggle();
-  });
+  $('.j-faq-btn').on('click', function(){
 
-  $(".j-faq-burger3").on("click", function () {
-    $(".j-desc3").slideToggle();
+    if ( prevFaqBtn === this) {
+      $(this).next().slideToggle();
+
+      return;
+    }
+
+    $('.j-faq-btn').next().slideUp();
+    $(this).next().slideDown();
+
+    prevFaqBtn = this;
+
   });
 
   //карусель
 
-  // $(".j-carousel").slick({
-  //   dots: true
-  // });
+  $(".j-carousel").slick({
+  });
 
   //Все бабочки
 
-  $(".j-btn-review").on("click", function () {
+  $('.j-btn-review').on('click', function () {
+    
+    
     $.ajax({
-      type: "POST",
-      data: "count=2",
-      success: function (response) {
-        console.log(response);
+      type: 'POST',
+      url: 'jsons/catalog.json',
+      data: 'count=2',
+      success: function(response) {
+        const htmlString = createHtmlString(response.review);
+        printToPage(htmlString);
+
+        if (!response.isShowMore) {
+          $('.j-btn-review').hide();
+        }
       },
-      error: function () {},
+      error: function() {
+
+      }
     });
+
+
+    function createHtmlString(array) {
+      let htmlString = '';
+  
+      array.forEach(function(arrayItem){
+        htmlString = htmlString + `<div class="features-card" data-type="adults">
+        <a href="#" class="card">
+          <img src="${arrayItem.imgUrl}" alt="Бабочка сякая" />
+          <span>${arrayItem.text}</span>
+        </a>
+      </div>`;
+      });
+  
+      return htmlString;
+    }
+  
+    function printToPage(string) {
+      console.log(string);
+      $('.j-features-list').append(string);
+    }
+  
+
   });
 
-
-
-
-
-
-
-
-
-
-
-
-  
 });

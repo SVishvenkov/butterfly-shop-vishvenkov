@@ -10,38 +10,35 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <div class="header-wrap">
-          <a href="#" class="main-logo">Butterfly</a>
-          <nav class="menu j-menu">
-            <ul>
-              <li>
-                <a href="catalog.html">каталог</a>
-              </li>
-              <li>
-                <a href="reviews.html">отзывы</a>
-              </li>
-              <li>
-                <a href="contacts.html">контакты</a>
-              </li>
-              <li>
-                <a href="faq.html">faq</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="burger j-burger">menu</button>
-        </div>
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="main-logo">Butterfly</a>
+        <nav class="menu j-menu">
+          <ul>
+            <li>
+              <a href="catalog.html">каталог</a>
+            </li>
+            <li>
+              <a href="reviews.html" class="review-active">отзывы</a>
+            </li>
+            <li>
+              <a href="contacts.html">контакты</a>
+            </li>
+            <li>
+              <a href="faq.html">faq</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger j-burger">menu</button>
       </div>
     </div>
-  </header>
+</header>
 
   <main class="main">
 
     <section class="slider">
       <div class="slider-inner">
         <h2 class="slider-title">Отзывы</h2>
-
         <div class="slider-wrap">
           <div class="carousel j-carousel">
             <div class="carousel-item-wrap">
@@ -62,7 +59,6 @@
             </div>
             <div class="carousel-item-wrap">
               <div class="carousel-item">
-                <div class="caorusel-color-block"></div>
                 <div class="caorusel-info">
                   <div class="carousel-info-img">
                     <img src="../images/stathem.png" alt="" class="carousel-image">
@@ -100,56 +96,10 @@
         </div>
       </div>
     </section>
-
-
-    <!-- <section class="slider">
-      <div class="slider-inner">
-        <h2 class="slider-title">Каруселька</h2>
-
-        <div class="slider-wrap">
-          <div class="carousel j-carousel">
-            <div class="carousel-item-wrap">
-              <div class="carousel-item">
-                <div class="caorusel-color-block red"></div>
-                <div class="caorusel-info">
-                  <strong class="caorusel-caption">Lorem, ipsum dolor.</strong>
-                  <p class="caorusel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis error
-                    culpa beatae magni ullam quia! Illo quas eos repellendus, ipsum modi veniam deserunt culpa rerum,
-                    quod, dolores unde magnam.</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item-wrap">
-              <div class="carousel-item">
-                <div class="caorusel-color-block green"></div>
-                <div class="caorusel-info">
-                  <strong class="caorusel-caption">Lorem, ipsum dolor.</strong>
-                  <p class="caorusel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis error
-                    culpa beatae magni ullam quia! Illo quas eos repellendus, ipsum modi veniam deserunt culpa rerum,
-                    quod, dolores unde magnam.</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item-wrap">
-              <div class="carousel-item">
-                <div class="caorusel-color-block blue"></div>
-                <div class="caorusel-info">
-                  <strong class="caorusel-caption">Lorem, ipsum dolor.</strong>
-                  <p class="caorusel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis error
-                    culpa beatae magni ullam quia! Illo quas eos repellendus, ipsum modi veniam deserunt culpa rerum,
-                    quod, dolores unde magnam.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section class="lead">
       <div class="lead-inner">
-        <h2>Закажи пошив</h2>
-        <p>
+        <h2 class="lead-title">Закажи пошив</h2>
+        <p class="lead-text">
           Заполните форму- наш мастер свяжется с вами, согласует удобное
           времяя для встречи. На встречи он снимет мерки и поможет
           определиться с тканью.
@@ -164,7 +114,7 @@
             <input type="text" name="phone" id="phone" class="form-input" />
           </div>
           <div class="form-field form-button">
-            <button class="btn" type="submit">Заказать</button>
+            <button class="btn-lead" type="submit">Заказать</button>
           </div>
         </form>
       </div>
@@ -174,18 +124,21 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-wrap">
-        <a href="#" class="foot-logo">Butterfly</a>
-
-        <div class="footer-social">
+        <div class="footer-cont">
+          <a href="#" class="foot-logo">Butterfly</a>
           <div class="footer-phone">
             <a class="footer-num" href="tel:+78128008080">+7 812 800-80-80</a>
           </div>
+        </div>
 
-          <a href="#" style="background-image: url(images/socials/inst.svg)" class="social-items">
+        <div class="footer-social">
+          <a href="#" style="background-image: url(images/socials/inst.svg)" title="Мы в Instagramm"
+            class="social-items">
           </a>
-          <a href="#" style="background-image: url(images/socials/fcb.svg)" class="social-items">
+          <a href="#" style="background-image: url(images/socials/fcb.svg)" title="Мы в Facebook" class="social-items">
           </a>
-          <a href="#" style="background-image: url(images/socials/tlg.svg)" class="social-items"></a>
+          <a href="#" style="background-image: url(images/socials/tlg.svg)" title="Мы в Telegramm"
+            class="social-items"></a>
         </div>
       </div>
     </div>

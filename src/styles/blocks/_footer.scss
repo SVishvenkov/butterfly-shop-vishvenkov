@@ -6,27 +6,28 @@ footer {
   @media (max-width: $tablet-max) {
     padding: 10px;
   }
+}
 
-  .footer-inner {
-    @include inner;
-  }
-
-  a {
-    color: $color-white;
-    text-decoration: none;
-  }
+.footer-inner {
+  @include inner;
 }
 
 .footer-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   @media (max-width: $mobile-max) {
     display: block;
     justify-content: center;
     text-align: center;
   }
+}
+
+.footer-cont {
+  width: 91.66%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .foot-logo {
@@ -36,17 +37,6 @@ footer {
   @media (max-width: $mobile-max) {
     font-size: 36px;
     line-height: 49px;
-  }
-}
-
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: $mobile-max) {
-    justify-content: center;
   }
 }
 
@@ -60,7 +50,8 @@ footer {
   font-size: 28px;
   line-height: 38px;
   padding-left: 20px;
-  padding-right: 15px;
+  padding-right: 60px;
+  color: $color-white;
 
   @media (max-width: $mobile-max) {
     font-size: 36px;
@@ -68,9 +59,18 @@ footer {
   }
 }
 
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.33%;
+
+  @media (max-width: $mobile-max) {
+    justify-content: center;
+  }
+}
 
 .social-items {
-  margin-left: 15px;
   width: 26px;
   height: 26px;
 }

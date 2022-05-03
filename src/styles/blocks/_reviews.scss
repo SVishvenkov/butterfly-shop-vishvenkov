@@ -1,5 +1,6 @@
 .slider {
-    padding: 100px 0;
+    padding-top: 230px;
+    padding-bottom: 100px;
     background-color: $color-white;
   }
   
@@ -18,4 +19,8 @@
   .carousel-image {
       width: 304px;
       height: 304px;  
+  }
+
+  .review-active {
+    background-color: $color-accent;
   }

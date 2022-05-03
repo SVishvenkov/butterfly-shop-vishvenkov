@@ -1,24 +1,10 @@
 .header {
   background-color: $color-dark;
-  padding: 16px 0;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 1000;
-
-
-  @media (max-width: $tablet-max) {
-    padding: 20px 0;
-  }
-
-  @media (max-width: $mobile-max) {
-    padding: 16px 0;
-  }
-}
-
-a {
-  text-decoration: none;
 }
 
 .menu {

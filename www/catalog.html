@@ -9,36 +9,34 @@
 
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <div class="header-wrap">
-            <a href="#" class="main-logo">Butterfly</a>
-            <nav class="menu j-menu">
-              <ul>
-                <li>
-                  <a href="catalog.html" class="accent">каталог</a>
-                </li>
-                <li>
-                  <a href="#">отзывы</a>
-                </li>
-                <li>
-                  <a href="#">контакты</a>
-                </li>
-                <li>
-                  <a href="#">faq</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="burger j-burger">menu</button>
-          </div>
+      <div class="header-inner">
+        <div class="header-wrap">
+          <a href="index.html" class="main-logo">Butterfly</a>
+          <nav class="menu j-menu">
+            <ul>
+              <li>
+                <a href="catalog.html" class="catalog-active">каталог</a>
+              </li>
+              <li>
+                <a href="reviews.html">отзывы</a>
+              </li>
+              <li>
+                <a href="contacts.html">контакты</a>
+              </li>
+              <li>
+                <a href="faq.html">faq</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger j-burger">menu</button>
         </div>
       </div>
-    </header>
+  </header>
 
     <main>
       <section class="features">
         <div class="features-inner features-inner-catalog">
-          <h2>Наши работы</h2>
+          <h2 class="catalog-title">Наши работы</h2>
 
           <div class="catalog">
             <a href="#" class="catalog-search j-catalog-search" data-filter="all">Все</a>
@@ -47,10 +45,9 @@
             <a href="#" class="catalog-search j-catalog-search" data-filter="animals">Для животных</a>
             <a href="#" class="catalog-search j-catalog-search" data-filter="baby">Детские</a>
             <a href="#" class="catalog-search j-catalog-search" data-filter="adults">Для взрослых</a>
-
           </div>
 
-          <div class="features-butterfly">
+          <div class="features-list j-features-list">
             <div class="features-card" data-type="strict">
               <a href="#" class="card">
                 <img src="../images/butterfly-1.png" alt="Бабочка такая" />
@@ -125,14 +122,14 @@
             </div>
           </div>
 
-          <a href="#" class="btn btn-features j-btn-review">Все бабочки</a>
+          <button class="btn-features j-btn-review">Все бабочки</button>
         </div>
       </section>
 
       <section class="lead">
         <div class="lead-inner">
-          <h2>Закажи пошив</h2>
-          <p>
+          <h2 class="lead-title">Закажи пошив</h2>
+          <p class="lead-text">
             Заполните форму- наш мастер свяжется с вами, согласует удобное
             времяя для встречи. На встречи он снимет мерки и поможет
             определиться с тканью.
@@ -146,8 +143,8 @@
               <label for="phone" class="form-label">Телефон</label>
               <input type="text" name="phone" id="phone" class="form-input" />
             </div>
-            <div class="form-field">
-              <button class="btn" type="submit">Заказать</button>
+            <div class="form-field form-button">
+              <button class="btn-lead" type="submit">Заказать</button>
             </div>
           </form>
         </div>
@@ -157,30 +154,21 @@
     <footer class="footer">
       <div class="footer-inner">
         <div class="footer-wrap">
-          <a href="#" class="foot-logo">Butterfly</a>
-
-          <div class="footer-social">
+          <div class="footer-cont">
+            <a href="#" class="foot-logo">Butterfly</a>
             <div class="footer-phone">
               <a class="footer-num" href="tel:+78128008080">+7 812 800-80-80</a>
             </div>
-
-            <a
-              href="#"
-              style="background-image: url(images/socials/inst.svg)"
-              class="social-items"
-            >
+          </div>
+  
+          <div class="footer-social">
+            <a href="#" style="background-image: url(images/socials/inst.svg)" title="Мы в Instagramm"
+              class="social-items">
             </a>
-            <a
-              href="#"
-              style="background-image: url(images/socials/fcb.svg)"
-              class="social-items"
-            >
+            <a href="#" style="background-image: url(images/socials/fcb.svg)" title="Мы в Facebook" class="social-items">
             </a>
-            <a
-              href="#"
-              style="background-image: url(images/socials/tlg.svg)"
-              class="social-items"
-            ></a>
+            <a href="#" style="background-image: url(images/socials/tlg.svg)" title="Мы в Telegramm"
+              class="social-items"></a>
           </div>
         </div>
       </div>

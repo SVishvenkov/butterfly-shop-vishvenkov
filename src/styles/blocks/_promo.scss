@@ -1,34 +1,38 @@
 .promo {
   text-align: center;
-
-  background-image: url(/images/promo.png);
+  background: linear-gradient(
+      0deg,
+      rgba($color-dark, 0.4),
+      rgba($color-dark, 0.4)
+    ),
+    url(/images/promo.png);
   margin-top: 89px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-top: 200px;
   padding-bottom: 215px;
 
   @media (max-width: $tablet-max) {
-
     padding-bottom: 190px;
   }
 
   @media (max-width: $mobile-max) {
-
     margin-top: 69px;
     padding-bottom: 100px;
   }
 }
+
 .promo-inner {
   @include inner;
 }
 
-h1 {
+.promo-title {
   color: $color-white;
   font-weight: 600;
   line-height: 98px;
   font-size: 72px;
-  padding: 200px 0 100px;
+  padding-bottom: 100px;
 
   @media (max-width: $tablet-max) {
     padding-top: 180px;
@@ -41,14 +45,5 @@ h1 {
     padding-bottom: 80px;
     font-size: 32px;
     line-height: 44px;
-  }
-}
-
-.promo-btn {
-  @include btn;
-  padding: 30px 36px;
-
-  @media (max-width: $mobile-max) {
-    padding: 20px 14px;
   }
 }

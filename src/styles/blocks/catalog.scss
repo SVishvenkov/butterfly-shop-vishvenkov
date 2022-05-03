@@ -1,15 +1,15 @@
-
-.accent {
-    background-color: $color-accent;
+.catalog-active {
+  background-color: $color-accent;
 }
 
+.catalog {
+  padding-bottom: 30px;
+}
 
-.features-inner-catalog {
-  h2 {
-      @include h2;
-    margin-top: 90px;
-    margin-bottom: 77px;
-  }
+.catalog-title {
+  @include h2;
+  margin-top: 90px;
+  margin-bottom: 77px;
 }
 
 .catalog-search {
@@ -19,6 +19,10 @@
   color: $color-dark;
   padding-left: 25px;
   padding-right: 25px;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 .features {
