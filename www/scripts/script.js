@@ -79,7 +79,7 @@ $(document).ready(function () {
       url: 'jsons/catalog.json',
       data: 'count=2',
       success: function(response) {
-        const htmlString = createHtmlString(response.review);
+        const htmlString = createHtmlString(response.catalog);
         printToPage(htmlString);
 
         if (!response.isShowMore) {

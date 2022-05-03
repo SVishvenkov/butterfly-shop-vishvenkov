@@ -28,6 +28,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $mobile-max) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .foot-logo {
@@ -50,7 +55,7 @@ footer {
   font-size: 28px;
   line-height: 38px;
   padding-left: 20px;
-  padding-right: 60px;
+  padding-right: 45px;
   color: $color-white;
 
   @media (max-width: $mobile-max) {
@@ -68,9 +73,11 @@ footer {
   @media (max-width: $mobile-max) {
     justify-content: center;
   }
+
 }
 
 .social-items {
   width: 26px;
   height: 26px;
+  padding-left: 15px;
 }
