@@ -1,23 +1,32 @@
-.header {
-  a {
-    color: $color-white;
-  }
-}
-
-.header-inner {
-  @include inner;
-}
-
 .menu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    display: block !important;
+  }
+
   @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
     padding-top: 25px;
     padding-bottom: 15px;
+    background-color: $color-dark;
+    color: $color-white;
   }
   ul {
     display: flex;
+    list-style: none;
 
     @media (max-width: $mobile-max) {
       display: block;
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -25,7 +34,6 @@
     margin: 0 5px;
 
     @media (max-width: $mobile-max) {
-
       padding-bottom: 10px;
     }
   }
@@ -34,6 +42,5 @@
     display: block;
     color: $color-white;
     padding: 33px 25px;
-    // background-color: $color-accent;
   }
 }

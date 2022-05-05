@@ -1,10 +1,13 @@
-footer {
+.footer {
+  padding: 30px 0;
   background-color: $color-dark;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
-  @media (max-width: $tablet-max) {
-    padding: 10px;
+  @media (max-width: $mobile-max) {
+    padding-bottom: 35px;
+  }
+
+  a {
+    color: $color-white;
   }
 }
 
@@ -23,61 +26,61 @@ footer {
   }
 }
 
-.footer-cont {
-  width: 91.66%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: $mobile-max) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .foot-logo {
-  @include logo;
-  color: $color-white;
+  width: 66.68%;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
 
   @media (max-width: $mobile-max) {
-    font-size: 36px;
-    line-height: 49px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 
-.footer-phone {
+.footer-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 33.32%;
+
   @media (max-width: $mobile-max) {
-    padding-top: 30px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 
 .footer-num {
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  padding-left: 20px;
-  padding-right: 45px;
-  color: $color-white;
+  white-space: nowrap;
 
   @media (max-width: $mobile-max) {
-    font-size: 36px;
-    line-height: 49px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
   }
 }
 
 .footer-social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 8.33%;
+  width: 25%;
 
   @media (max-width: $mobile-max) {
-    justify-content: center;
+    margin: auto;
   }
-
 }
 
 .social-items {
+  padding-left: 15px;
   width: 26px;
   height: 26px;
-  padding-left: 15px;
 }

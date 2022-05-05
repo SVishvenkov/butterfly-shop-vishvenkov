@@ -5,37 +5,18 @@
   left: 0;
   top: 0;
   z-index: 1000;
-}
 
-.menu {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
-
-  @media (min-width: $desktop) {
-    display: block !important;
-  }
-
-  @media (max-width: $mobile-max) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    width: 100%;
-    background-color: $color-dark;
+  a {
     color: $color-white;
   }
+}
 
-  ul {
-    list-style: none;
+.header-inner {
+  @include inner;
+}
 
-    @media (max-width: $mobile-max) {
-      justify-content: center;
-      display: block;
-      text-align: center;
-    }
-  }
+.burgerito {
+background-color:$color-dark;
 }
 
 .header-inner {
@@ -50,7 +31,7 @@
 
 .main-logo {
   @include logo;
-
+  padding: 16px 0;
   @media (max-width: $mobile-max) {
     font-size: 28px;
     line-height: 38px;

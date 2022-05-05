@@ -21,22 +21,22 @@
   margin: 0 auto;
 }
 
-@mixin btn {
-  display: inline-block;
-  border-radius: 6px;
-  text-decoration: none;
-  background-color: $color-accent;
-  color: $color-white;
-  font-size: 42px;
-  line-height: 57px;
-  min-width: 497px;
+// @mixin btn {
+//   display: inline-block;
+//   border-radius: 6px;
+//   text-decoration: none;
+//   background-color: $color-accent;
+//   color: $color-white;
+//   font-size: 42px;
+//   line-height: 57px;
+//   min-width: 497px;
 
-  @media (max-width: $mobile-max) {
-    font-size: 24px;
-    line-height: 33px;
-    min-width: 278px;
-  }
-}
+//   @media (max-width: $mobile-max) {
+//     font-size: 24px;
+//     line-height: 33px;
+//     min-width: 278px;
+//   }
+// }
 
 
 @mixin h2 {

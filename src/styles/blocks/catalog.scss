@@ -13,12 +13,13 @@
 }
 
 .catalog-search {
+  padding-left: 25px;
+  padding-right: 25px;
   font-weight: 600;
   font-size: 22px;
   line-height: 24px;
   color: $color-dark;
-  padding-left: 25px;
-  padding-right: 25px;
+  white-space: nowrap;
 
   &:hover {
     color: $color-accent;

@@ -1,15 +1,18 @@
-
-
 .carousel-item {
   display: flex;
   align-items: center;
 }
 
 .caorusel-info {
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   padding-left: 128px;
   padding-right: 128px;
+
+  @media (max-width: $mobile-max) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .carousel-info-text {

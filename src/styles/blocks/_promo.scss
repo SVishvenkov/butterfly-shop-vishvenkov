@@ -1,17 +1,17 @@
 .promo {
   text-align: center;
+  margin-top: 89px;
+  padding-top: 200px;
+  padding-bottom: 215px;
   background: linear-gradient(
       0deg,
       rgba($color-dark, 0.4),
       rgba($color-dark, 0.4)
     ),
     url(/images/promo.png);
-  margin-top: 89px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 200px;
-  padding-bottom: 215px;
 
   @media (max-width: $tablet-max) {
     padding-bottom: 190px;
@@ -28,11 +28,11 @@
 }
 
 .promo-title {
-  color: $color-white;
+  padding-bottom: 100px;
   font-weight: 600;
   line-height: 98px;
   font-size: 72px;
-  padding-bottom: 100px;
+  color: $color-white;
 
   @media (max-width: $tablet-max) {
     padding-top: 180px;

@@ -1,7 +1,7 @@
 .features {
-  text-align: center;
   padding-top: 130px;
   padding-bottom: 130px;
+  text-align: center;
 
   @media (max-width: $tablet-max) {
     padding-top: 120px;
@@ -23,17 +23,14 @@
 }
 
 .features-list {
-  margin-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0px;
   margin-left: -10px;
   margin-right: -10px;
 
   @media (max-width: $tablet-max) {
     margin: 0 auto;
-  }
-
-  @media (max-width: $mobile-max) {
   }
 }
 
@@ -54,23 +51,18 @@
 .card {
   position: relative;
   display: block;
-  @media (max-width: $tablet-max) {
-  }
-
-  @media (max-width: $mobile-max) {
-  }
 
   span {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0px;
-    color: $color-white;
     padding: 15px;
     background: rgba(0, 0, 0, 0.4);
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
+    color: $color-white;
   }
 
   img {
